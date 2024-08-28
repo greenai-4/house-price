@@ -76,7 +76,7 @@ const predictPrice = () => {
         lift: inputData.elevator,
         security: inputData.manager,
         parkinglot: inputData.parking_spaces,
-        year: 110, // FIXME: Fix?
+        year: inputData.predicted_year, 
         floor_level: inputData.floor,
         total_floor: inputData.total_floors,
         room: inputData.rooms,
