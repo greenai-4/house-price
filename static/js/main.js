@@ -108,7 +108,7 @@ const predictPrice = () => {
       document.getElementById('unit_price').textContent = `${unitPrice} 萬/坪`;
 
       // 填入貸款價格
-      document.getElementById('loan_amount').value = response.data.predict_price
+      document.getElementById('loan_amount').value = Math.round(response.data.predict_price)
 
       // Update price trend chart
       updatePriceTrendChart(response.data.predict_price * 10000);

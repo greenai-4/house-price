@@ -23,11 +23,11 @@
           <input type="hidden" name="csrfmiddlewaretoken" value="JeU2ighPkkbtzz6yBUnd8I0lPxd9aLprO77dFiUs0vzuLsJgiJzxfHID4G3fB9o3" />
           <table>
             <tr>
-              <th>屋齡</th>
-              <td><input type="text" name="屋齡" id="house_age" onkeydown="focusNext(event, 'area_ping')" placeholder="請輸入年數" /></td>
+              <th class="required">屋齡</th>
+              <td><input type="text" name="屋齡" id="house_age" onkeydown="focusNext(event, 'area_ping')" placeholder="請輸入年數" required/></td>
             </tr>
             <tr>
-              <th>面積 (坪)</th>
+              <th class="required">面積 (坪)</th>
               <td><input type="text" name="面積_坪" id="area_ping" onkeydown="focusNext(event, 'elevator')" placeholder="請輸入坪數" /></td>
             </tr>
             <tr>
@@ -76,9 +76,9 @@
               </td>
             </tr>
             <tr>
-              <th class="required">房/廳/衛</th>
+              <th>房/廳/衛</th>
               <td class="inline-inputs">
-                <input type="text" name="房" id="rooms" placeholder="房" onkeydown="focusNext(event, 'living_rooms')" required />
+                <input type="text" name="房" id="rooms" placeholder="房" onkeydown="focusNext(event, 'living_rooms')" />
                 <input type="text" name="廳" id="living_rooms" placeholder="廳" onkeydown="focusNext(event, 'bathrooms')" />
                 <input type="text" name="衛" id="bathrooms" placeholder="衛" onkeydown="focusNext(event, 'building_type')" />
               </td>
@@ -107,8 +107,8 @@
               </td>
             </tr>
             <tr>
-              <th class="required">預計年度(民國)</th>
-              <td><input type="text" name="預計年度" id="predicted_year" onkeydown="focusNext(event, '')" placeholder="請輸入預計年度" required /></td>
+              <th c>預計年度(民國)</th>
+              <td><input type="text" name="預計年度" id="predicted_year" onkeydown="focusNext(event, '')" placeholder="請輸入預計年度"  /></td>
             </tr>
           </table>
 
