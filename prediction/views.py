@@ -40,8 +40,8 @@ def calc(request):
     House = request.GET.get('hs')
     commercial_use = request.GET.get('cu')
     residential_use = request.GET.get('ru')
-    none1 = request.GET.get('n1')
-    none2 = request.GET.get('n2')
+    business_use = request.GET.get('bu')
+    office_use = request.GET.get('ou')
     district = request.GET.get('ds')
     
 
@@ -65,8 +65,8 @@ def calc(request):
                     House,  # 透天厝
                     commercial_use,  # 住商用
                     residential_use,  # 住家用
-                    none1,  # 空欄
-                    none2,  # 空欄
+                    business_use,  # 商業用
+                    office_use,  # 辦公用
                     district  # 行政區
                     ]).reshape(1, 23)
 

@@ -89,8 +89,8 @@ const predictPrice = () => {
         House: building_type_array.House,
         commercial_use: usage_array.commercial_use,
         residential_use: usage_array.residential_use,
-        none1: 0, // FIXME: Fix?
-        none2: 0, // FIXME: Fix?
+        business_use: 0, // FIXME: Fix?
+        office_use: 0, // FIXME: Fix?
         district: 1, // FIXME: Fix?
       },
     })
@@ -181,15 +181,33 @@ const usage2onehot = (usage) => {
     case "1":
       usage_array.commercial_use = "1";
       usage_array.residential_use = "0";
+      usage_array.business_use = "0";
+      usage_array.office_use = "0";
       break;
     case "2":
       usage_array.commercial_use = "0";
       usage_array.residential_use = "1";
+      usage_array.business_use = "0";
+      usage_array.office_use = "0";
+      break;
+    case "3":
+      usage_array.commercial_use = "0";
+      usage_array.residential_use = "0";
+      usage_array.business_use = "1";
+      usage_array.office_use = "0";
+      break;
+    case "4":
+      usage_array.commercial_use = "0";
+      usage_array.residential_use = "0";
+      usage_array.business_use = "0";
+      usage_array.office_use = "1";
       break;
 
     default:
       usage_array.commercial_use = "0";
       usage_array.residential_use = "0";
+      usage_array.business_use = "0";
+      usage_array.office_use = "0";
       break;
   }
   return usage_array;
