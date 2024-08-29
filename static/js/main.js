@@ -11,15 +11,15 @@ const demo = () => {
   document.getElementById("area_ping").value = "26";
   document.getElementById("elevator").value = "有";
   document.getElementById("manager").value = "有";
-  document.getElementById("parking_spaces").value = "有";
+  document.getElementById("parking_spaces").value = "無";
   document.getElementById("floor").value = "1";
   document.getElementById("total_floors").value = "0";
   document.getElementById("rooms").value = "2";
   document.getElementById("living_rooms").value = "1";
   document.getElementById("bathrooms").value = "1";
   document.getElementById("building_type").value = "2";
-  document.getElementById("usage").value = "0";
-  document.getElementById("predicted_year").value = "110";
+  document.getElementById("usage").value = "2";
+  document.getElementById("predicted_year").value = "111";
 }
 
 const predictPrice = () => {
@@ -82,16 +82,16 @@ const predictPrice = () => {
         room: inputData.rooms,
         livingroom: inputData.living_rooms,
         bathroom: inputData.bathrooms,
-        building_type: building_type_array.building_type, // FIXME: Fix? 建物類型: Opt1
+        building_type: building_type_array.building_type, // 
         apartment: building_type_array.apartment,
         suite: building_type_array.suite,
         Huaxia: building_type_array.Huaxia,
         House: building_type_array.House,
         commercial_use: usage_array.commercial_use,
         residential_use: usage_array.residential_use,
-        business_use: 0, // FIXME: Fix?
-        office_use: 0, // FIXME: Fix?
-        district: 1, // FIXME: Fix?
+        business_use: 0, // 
+        office_use: 0, // 
+        district: 1, // 
       },
     })
     .then(function (response) {
