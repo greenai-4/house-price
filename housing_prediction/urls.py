@@ -20,8 +20,10 @@ from prediction.views import house,calc
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('prediction.urls')),  # 包含应用的 URL 路由
+    path('', house), #根路徑指向house
+    # path('', include('prediction.urls')),  # 包含应用的 URL 路由
     path('house', house),
     path('test', calc),
+    
 ]
 

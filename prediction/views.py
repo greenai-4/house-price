@@ -44,6 +44,7 @@ def calc(request):
     office_use = request.GET.get('ou')
     district = request.GET.get('ds')
     
+    # if pin == ''
 
     test = np.array([longitude, # 120.6624, #經度
                     latitude, # 24.1208,  #緯度

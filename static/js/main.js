@@ -215,9 +215,10 @@ const usage2onehot = (usage) => {
 
 // 表單驗證
 const validateForm = () => {
-  const rooms = document.getElementById("rooms").value;
-  const predictedYear = document.getElementById("predicted_year").value;
-  return rooms !== "" && predictedYear !== "";
+  const house_age = document.getElementById("house_age").value;
+  const area_ping = document.getElementById("area_ping").value;
+  // return rooms !== "" && predictedYear !== "";
+  return Swal.fire()
 };
 
 
