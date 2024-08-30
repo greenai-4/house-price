@@ -89,8 +89,8 @@ const predictPrice = () => {
         House: building_type_array.House,
         commercial_use: usage_array.commercial_use,
         residential_use: usage_array.residential_use,
-        business_use: 0, // 
-        office_use: 0, // 
+        business_use: usage_array.business_use, // 
+        office_use: usage_array.business_use, // 
         district: 1, // 
       },
     })
