@@ -65,8 +65,8 @@ def calc(request):
                     House,  # 透天厝
                     commercial_use,  # 住商用
                     residential_use,  # 住家用
-                    business_use,  #商業用
-                    office_use,  #辦公用
+                    business_use,  # 商業用
+                    office_use,  # 辦公用
                     district  # 行政區
                     ]).reshape(1, 23)
 
