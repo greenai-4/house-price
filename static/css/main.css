@@ -185,7 +185,7 @@ color: #64ffda;
 
 .required::after {
 content: " *";
-color: #ff6b6b;
+color: #fdff6b;
 }
 
 .background {

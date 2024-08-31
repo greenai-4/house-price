@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const demo = () => {
   document.getElementById("house_age").value = "20";
-  document.getElementById("area_ping").value = "26";
+  document.getElementById("area_ping").value = "25";
   document.getElementById("elevator").value = "有";
   document.getElementById("manager").value = "有";
   document.getElementById("parking_spaces").value = "無";
@@ -217,8 +217,7 @@ const usage2onehot = (usage) => {
 const validateForm = () => {
   const house_age = document.getElementById("house_age").value;
   const area_ping = document.getElementById("area_ping").value;
-  // return rooms !== "" && predictedYear !== "";
-  return Swal.fire()
+  return house_age !== "" && area_ping !== "";
 };
 
 
